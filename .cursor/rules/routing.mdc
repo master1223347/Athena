@@ -1,0 +1,34 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Routing Structure
+
+The application uses React Router for navigation with a protected route system.
+
+## Route Configuration
+
+The main routing configuration is in [src/App.tsx](mdc:src/App.tsx) with these key route guards:
+
+- `RequireAuth` - Ensures users are authenticated before accessing protected routes
+- `RequireUnauth` - Redirects authenticated users away from auth pages (login/register)
+
+## Main Routes
+
+### Public Routes
+- `/landing` - Landing page for non-authenticated users
+- `/login` - User login page
+- `/register` - User registration page
+
+### Protected Routes
+- `/` - Main dashboard
+- `/courses` - Courses listing and management
+- `/progress` - User learning progress
+- `/calendar` - Schedule and events
+- `/settings` - User settings
+- `/achievements` - User achievements
+- `/help` - Help and support
+
+### Other Routes
+- `*` - NotFound page for 404 handling

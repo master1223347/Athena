@@ -1,0 +1,27 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Component Structure
+
+The application uses a modular component architecture with specialized component directories.
+
+## Component Categories
+
+- [src/components/ui](mdc:src/components/ui) - Base UI components (shadcn/ui)
+- [src/components/navigation](mdc:src/components/navigation) - Navigation components (sidebar, navbar)
+- [src/components/layouts](mdc:src/components/layouts) - Layout components and containers
+- [src/components/canvas](mdc:src/components/canvas) - Canvas-related components for drawing/visualization
+- [src/components/common](mdc:src/components/common) - Shared components used across the application
+- [src/components/settings](mdc:src/components/settings) - Settings-related components
+- [src/components/journey](mdc:src/components/journey) - Learning journey components
+- [src/components/achievements](mdc:src/components/achievements) - Achievement-related components
+- [src/components/icons](mdc:src/components/icons) - Custom icon components
+
+## Component Usage Guidelines
+
+1. Use the appropriate component category for new components
+2. Reuse existing components when possible
+3. Follow the established coding patterns for props and state management
+4. Maintain consistent styling with Tailwind classes

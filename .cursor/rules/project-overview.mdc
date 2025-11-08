@@ -1,0 +1,29 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Project Overview
+
+This project is a Learning Management System built with:
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- React Router
+- Tanstack Query
+- Supabase
+
+## Key Files and Directories
+
+- [src/App.tsx](mdc:src/App.tsx) - Main application component with routing configuration
+- [src/pages](mdc:src/pages) - All page components
+- [src/components](mdc:src/components) - Reusable UI components
+- [src/contexts](mdc:src/contexts) - React context providers
+- [src/hooks](mdc:src/hooks) - Custom React hooks
+- [src/services](mdc:src/services) - API and service functions
+- [src/lib](mdc:src/lib) - Utility libraries and configurations
+
+## Application Structure
+
+The application follows a modular structure with separate directories for components, pages, hooks, and services. It uses React Router for navigation and has authentication features provided by AuthContext.

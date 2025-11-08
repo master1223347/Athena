@@ -1,0 +1,29 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Canvas Integration
+
+The application integrates with Canvas LMS for importing courses, assignments, and user data.
+
+## Key Components
+
+- [src/services/canvasIntegrationService.ts](mdc:src/services/canvasIntegrationService.ts) - Canvas credentials and sync management
+- [src/services/canvasApi.ts](mdc:src/services/canvasApi.ts) - API calls to Canvas LMS
+- [src/components/canvas](mdc:src/components/canvas) - Canvas-specific UI components
+
+## Integration Features
+
+1. **User Authentication** - Store and manage Canvas API tokens
+2. **Course Synchronization** - Import courses and assignments
+3. **Data Syncing** - Track last sync date and manage periodic updates
+4. **Credentials Management** - Add, update, and remove Canvas credentials
+
+## Implementation Details
+
+The application uses Supabase to store Canvas credentials securely and tracks synchronization timestamps to optimize API usage.
+
+## Canvas API Usage
+
+The integration uses the Canvas REST API for retrieving user data, courses, assignments, and other learning resources as needed.

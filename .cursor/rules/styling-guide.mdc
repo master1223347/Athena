@@ -1,0 +1,33 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Styling Guide
+
+This application uses Tailwind CSS with shadcn/ui components for consistent styling.
+
+## Key Files
+
+- [tailwind.config.ts](mdc:tailwind.config.ts) - Tailwind configuration
+- [src/index.css](mdc:src/index.css) - Global CSS styles
+- [src/components/ui](mdc:src/components/ui) - shadcn/ui components
+
+## Styling Patterns
+
+1. Use Tailwind utility classes for most styling needs
+2. Leverage shadcn/ui components for consistent UI elements
+3. Use the `cn()` utility for conditional class names
+4. Follow the component's existing styling patterns when making changes
+
+## Theme Configuration
+
+The application supports light and dark themes managed through the ThemeContext with theme toggle functionality.
+
+## Design System
+
+The application follows a cohesive design system with:
+- Consistent spacing scales
+- Typography system
+- Color palette defined in the Tailwind config
+- Rounded corners and shadows for depth

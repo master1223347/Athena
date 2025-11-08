@@ -1,0 +1,32 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Data Flow
+
+The application uses a combination of React Context, custom hooks, and service modules for data management.
+
+## State Management
+
+### Context Providers
+- [src/contexts/AuthContext.tsx](mdc:src/contexts/AuthContext.tsx) - Authentication state and user management
+- [src/contexts/ThemeContext.tsx](mdc:src/contexts/ThemeContext.tsx) - Theme settings and preferences
+
+### API Services
+- [src/services/authService.ts](mdc:src/services/authService.ts) - Authentication API calls
+- [src/services/courseService.ts](mdc:src/services/courseService.ts) - Course data management
+- [src/services/canvasApi.ts](mdc:src/services/canvasApi.ts) - Canvas API interactions
+- [src/services/userDataService.ts](mdc:src/services/userDataService.ts) - User profile and preferences
+- [src/services/openaiService.ts](mdc:src/services/openaiService.ts) - OpenAI integration
+- [src/services/milestoneService.ts](mdc:src/services/milestoneService.ts) - Learning milestone tracking
+
+## Data Flow Pattern
+
+1. UI Components request data via hooks or context
+2. Hooks/Context call appropriate service modules
+3. Service modules interact with external APIs (Supabase, etc.)
+4. Data flows back up through services to components
+
+## Query Management
+The application uses Tanstack Query for API data fetching, caching, and state management.
