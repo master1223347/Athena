@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Sidebar, SidebarContent, SidebarGroup, SidebarGroupContent, SidebarGroupLabel, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem, SidebarFooter } from "@/components/ui/sidebar";
 import { Button } from "@/components/ui/button";
-import { LayoutDashboard, Calendar, TrendingUp, Settings, HelpCircle, Moon, Sun, GraduationCap, Award, Send, LogOut, Trophy, CreditCard, User, Sparkles } from "lucide-react";
+import { LayoutDashboard, Settings, GraduationCap, LogOut, Trophy } from "lucide-react";
 import { useTheme } from "@/contexts/ThemeContext";
 import { useAuth } from "@/contexts/AuthContext";
 import { trackFeedbackSubmission } from "@/utils/eventTracker";
@@ -77,14 +77,7 @@ const AppSidebar = () => {
                 </SidebarMenu>
               </SidebarMenuItem>
 
-              <SidebarMenuItem>
-                <SidebarMenuButton asChild>
-                  <Link to="/gambling" className={isActive("/gambling") ? "font-bold text-primary flex items-center gap-2" : "flex items-center gap-2"}>
-                    <TrendingUp className="w-5 h-5" />
-                    <span>Gambling</span>
-                  </Link>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
+              {/* Gambling menu item removed per request */}
 
               <SidebarMenuItem>
                 <SidebarMenuButton asChild>
@@ -95,21 +88,7 @@ const AppSidebar = () => {
                 </SidebarMenuButton>
               </SidebarMenuItem>
 
-              <SidebarMenuItem>
-                <SidebarMenuButton asChild>
-                  <Link
-                    to="/pricing"
-                    className={`flex items-center mt-1 text-white justify-center gap-2 rounded-xl w-full py-5 ${
-                      theme === "dark" 
-                        ? "bg-journey-secondary"
-                        : "bg-[#a16bff] duration-200 transition-all opacity-100"
-                    }`}
-                  >
-                    <Sparkles className="w-5 h-5" />
-                    <span className="align-center">Upgrade to Premium</span>
-                  </Link>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
+              {/* Upgrade to Premium button removed per request */}
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
