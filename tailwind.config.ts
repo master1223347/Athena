@@ -64,7 +64,7 @@ export default {
         },
         // Educational color scheme
         journey: {
-          primary: "#3b82f6", // blue-500
+          primary: "#a855f7", // purple-500
           secondary: "#10b981", // emerald-500
           accent: "#8b5cf6", // violet-500
           warning: "#f59e0b", // amber-500

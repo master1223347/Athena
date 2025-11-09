@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Sidebar, SidebarContent, SidebarGroup, SidebarGroupContent, SidebarGroupLabel, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem, SidebarFooter } from "@/components/ui/sidebar";
 import { Button } from "@/components/ui/button";
-import { LayoutDashboard, Settings, GraduationCap, LogOut, Trophy } from "lucide-react";
+import { LayoutDashboard, Settings, GraduationCap, LogOut } from "lucide-react";
 import { useTheme } from "@/contexts/ThemeContext";
 import { useAuth } from "@/contexts/AuthContext";
 import { trackFeedbackSubmission } from "@/utils/eventTracker";
@@ -52,36 +52,20 @@ const AppSidebar = () => {
             <SidebarMenu>
               <SidebarMenuItem>
                 <SidebarMenuButton asChild>
-                  <Link to="/" className={isActive("/") ? "font-bold text-primary flex items-center gap-2" : "flex items-center gap-2"}>
+                  <Link to="/" className={isActive("/") ? "flex items-center gap-2 bg-muted/50 rounded px-2 py-1" : "flex items-center gap-2"}>
                     <LayoutDashboard className="w-5 h-5" />
                     <span>Dashboard</span>
                   </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
 
-              <SidebarMenuItem>
-                <SidebarMenuButton asChild>
-                  <Link to="/leaderboard" className={isActive("/leaderboard") ? "font-bold text-primary flex items-center gap-2" : "flex items-center gap-2"}>
-                    <Trophy className="w-5 h-5" />
-                    <span>Leaderboard</span>
-                  </Link>
-                </SidebarMenuButton>
-                <SidebarMenu className="pl-7 mt-0">
-                  <SidebarMenuItem className="mt-0">
-                    <SidebarMenuButton asChild>
-                      <Link to="/leaderboard/groups" className={isActive("/leaderboard/groups") ? "font-bold text-primary flex items-center gap-2" : "flex items-center gap-2 text-sm text-muted-foreground"}>
-                        <span>Leaderboard Groups</span>
-                      </Link>
-                    </SidebarMenuButton>
-                  </SidebarMenuItem>
-                </SidebarMenu>
-              </SidebarMenuItem>
+              {/* Leaderboard menu removed per request */}
 
               {/* Gambling menu item removed per request */}
 
               <SidebarMenuItem>
                 <SidebarMenuButton asChild>
-                  <Link to="/ai-assistant" className={isActive("/ai-assistant") ? "font-bold text-primary flex items-center gap-2" : "flex items-center gap-2"}>
+                  <Link to="/ai-assistant" className={isActive("/ai-assistant") ? "flex items-center gap-2 bg-muted/50 rounded px-2 py-1" : "flex items-center gap-2"}>
                     <GraduationCap className="w-5 h-5" />
                     <span>AI Study Tools</span>
                   </Link>

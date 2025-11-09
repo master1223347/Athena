@@ -31,7 +31,7 @@
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
-    --radius: 0.5rem;
+  --radius: 0.25rem; /* smaller radius for a flatter, simpler look */
     
     /* Sidebar colors */
     --sidebar-background: 210 40% 96.1%;
@@ -144,7 +144,7 @@
 }
 
 .journey-line.in-progress {
-  background-color: #3b82f6;
+  background-color: #a855f7; /* switched from blue to purple */
 }
 
 .journey-line.at-risk {
@@ -164,8 +164,8 @@
 }
 
 /* Stop colors for SVG gradients */
-.stop-color-blue-500 { stop-color: #3b82f6; }
-.stop-color-blue-700 { stop-color: #1d4ed8; }
+.stop-color-blue-500 { stop-color: #a855f7; }
+.stop-color-blue-700 { stop-color: #7e22ce; }
 .stop-color-green-500 { stop-color: #22c55e; }
 .stop-color-green-700 { stop-color: #15803d; }
 .stop-color-purple-500 { stop-color: #a855f7; }
